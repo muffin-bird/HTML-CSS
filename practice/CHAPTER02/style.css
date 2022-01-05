@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*背景*/
+body {
+	background-color: #fbf9cc;
+}
+
+/*リンク*/
+a {
+	color: #df4839;
+}
+
+/*タイトル*/
+h1 {
+	width: 300px;
+	margin: 40px auto;
+	padding: 30px;
+	border: 5px solid #95dbbd;
+	background-color: #6fbb9a;
+	color: #fff;
+	font-size: 300%;
+	text-align: center;
+	line-height: 1;
+}
+
+/*大見出し*/
+h2 {
+	padding: 10px;
+	margin-bottom: 30px;
+	border: 1px dotted #94c8b1;
+	border-left: 10px solid #d0e95b;
+	color: #6fbb9a;
+}

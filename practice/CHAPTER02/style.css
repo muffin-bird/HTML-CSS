@@ -3,6 +3,8 @@
 /*背景*/
 body {
 	background-color: #fbf9cc;
+	background-image: url(img/bg.png);
+	background-repeat: repeat-x;
 }
 
 /*リンク*/

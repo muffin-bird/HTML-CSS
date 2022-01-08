@@ -32,6 +32,11 @@ h1 {
 	font-size: 300%;
 	text-align: center;
 	line-height: 1;
+	border-radius: 50%;
+	text-shadow: 1px 1px 5px #000;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-image: linear-gradient(to bottom, #6fbb9a, #4a9d79);
+	font-family: 'Limelight', cursive;
 }
 
 /*大見出し*/
@@ -41,13 +46,17 @@ h1 {
 	border: 1px dotted #94c8b1;
 	border-left: 10px solid #d0e95b;
 	color: #6fbb9a;
+	border-radius: 5px 0 0 5px;
 }
 
-
-
-
-
 /*小見出しの設定*/
+.h-sub {
+  padding: 10px;
+  background-color: #fbf9cc;
+  color: #ff705b;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #ffd0ad inset;
+}
 .h-sub span {
 	font-weight: normal;
 }

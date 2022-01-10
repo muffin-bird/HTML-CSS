@@ -2,9 +2,7 @@
 
 /*背景*/
 body {
-	background-color: #fbf9cc;
-	background-image: url(img/bg.png);
-	background-repeat: repeat-x;
+	background: #fbf9cc url(img/bg.png) repeat-x;
 }
 
 /*リンク*/
@@ -19,6 +17,25 @@ a:hover {
 /*共通設定*/
 header,nav,footer {
 	text-align: center;
+}
+
+/*ナビ*/
+.menu li {
+	list-style-type: none;
+	display: inline-block;
+	width: 180px;
+	margin: 0 10px;
+}
+.menu a {
+	display: block;
+	padding: 10px;
+	background: #6fbb9a;
+	border-radius: 8px;
+	color: #fff;
+	text-decoration: none;
+}
+.menu a:hover {
+	background: #90ddbb;
 }
 
 /*タイトル*/
@@ -63,7 +80,8 @@ h1 {
 
 /*コンテンツ枠*/
 #contents {
-	margin: 40px;
+	width: 798px;
+	margin: 40px auto;
 	padding: 40px 80px;
 	border: 1px solid #f6bb9e;
 	background-color: #fff;
@@ -94,4 +112,27 @@ a[href^="mailto:"]::after {
 /*セクション間隔*/
 #contents > section + section {
 	margin-top: 80px;
+}
+
+/*回り込み*/
+.imgL {
+	float: left;
+	margin-right: 20px;
+}
+.imgR {
+  float: right;
+  margin-left: 20px;
+}
+.clear {
+	clear: both;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*円形にクリップ*/
+.img-round {
+  border-radius: 50%;
 }

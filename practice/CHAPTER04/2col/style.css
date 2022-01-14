@@ -5,3 +5,31 @@
   margin:0;
   padding:0;
 }
+
+#wrap {
+	width: 800px;
+	height: 30px auto;
+	background-color: beige;
+}
+
+#header {
+	background-color: lightpink;
+}
+
+#main {
+	width: 500px;
+	background-color: palegreen;
+	float: right;
+}
+
+#side {
+	width: 280px;
+	background-color: skyblue;
+	float: left;
+}
+
+#footer {
+	background: gold;
+	clear: both;
+}
+

@@ -32,41 +32,46 @@ ul {
 
 /*align-self*/
 .no7 .flex li:nth-child(1){
+  align-self: stretch;
 
 }
 .no7 .flex li:nth-child(2){
-
+  align-self: flex-start;
 }
 .no7 .flex li:nth-child(3){
-
+  align-self: flex-end;
 }
 .no7 .flex li:nth-child(4){
-
+  align-self: center;
 }
 .no7 .flex li:nth-child(5){
-
+  align-self: baseline;
 }
 
 /*order*/
 .no8 .flex li:nth-child(1) {
   background: #ffd800;
-
+  order: 1;
 }
 .no8 .flex li:nth-child(2) {
   background: #80d683;
+  order: 2;
 
 }
 
 /*flex-grow*/
 .no9 .flex.grow1 li:nth-child(1){
   width: 200px;
+  flex-grow: 1;
 }
 .no9 .flex.grow1 li:nth-child(2){
   width: 400px;
+  flex-grow: 1;
 }
 .no9 .flex.grow2 li:nth-child(2){
   width: auto;
   background: #ffd800;
+  flex-grow: 1;
 }
 
 /*flex-shrink*/
@@ -75,7 +80,7 @@ ul {
 }
 .no10 .flex li:nth-child(1){
   background: #ffd800;
-
+  flex-shrink: 0;
 }
 
 /*flex-basis*/
@@ -87,5 +92,5 @@ ul {
   flex-basis: 200px;
 }
 .no11 .flex {
-
+  flex-direction: column;
 }

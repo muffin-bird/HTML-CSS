@@ -15,7 +15,11 @@
 #header {
 	background-color: lightpink;
 }
-
+#contents {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
 #main {
 	width: 500px;
 	background-color: palegreen;

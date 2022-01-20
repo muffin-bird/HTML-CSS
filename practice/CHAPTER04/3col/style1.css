@@ -11,7 +11,10 @@
 	margin: 30px auto;
 	background-color: beige;
 }
-
+#contents {
+	display: flex;
+    justify-content: space-between;
+}
 #header {
 	background-color: lightpink;
 }

@@ -18,23 +18,29 @@ ul {
 #header {
 	background-color: lightpink;
 }
-
+#contents {
+	display: flex;
+	justify-content: space-between;
+}
 #side {
 	background-color: skyblue;
 	width: 200px;
 	float: left;
+	order: 1;
 }
 
 #main {
 	background-color: palegreen;
 	width: 360px;
 	float: right;
+	order: 2;
 }
 
 #navi {
 	background-color: plum;
 	width: 200px;
 	float: right;
+	order: 3;
 }
 
 #contents {

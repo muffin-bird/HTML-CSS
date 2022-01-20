@@ -27,11 +27,14 @@ ul{
 }
 
 .box {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .box li {
   width: 225px;
+  margin-bottom: 20px;
   border: 1px solid #666;
   background: #ccc;
 }

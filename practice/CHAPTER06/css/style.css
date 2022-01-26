@@ -90,15 +90,29 @@ a[href$=".pdf"] {
 /* その他の擬似クラス
 ---------------------------*/
 /*最後の１行以外全てを選択*/
-
+.nots li:not(:last-child) {
+ border-color: #f00;
+}
 
 /*リンク先を開く*/
-
+.target dd:target {
+ display: block;
+}
 
 /*有効な選択肢のラベルのスタイル*/
+.ui input:enabled+label {
+ cursor: pointer;
+}
 
-
+.ui input:enabled+label:hover {
+ color: #ccc;
+}
 /*無効な選択肢のラベルのスタイル*/
-
+.ui input:disabled+label {
+ color: #ccc;
+}
 
 /*チェックされた選択肢のラベルのスタイル*/
+.ui input:checked+label {
+ background: #cceebb;
+}

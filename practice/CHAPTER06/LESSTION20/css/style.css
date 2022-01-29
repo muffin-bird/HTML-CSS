@@ -38,28 +38,44 @@
 /* ボックスの装飾
 ---------------------------*/
 /*border-radius*/
-.bdr01{}
-.bdr02{}
-.bdr03{}
-.bdr04{}
+.bdr01{border-radius: 10px;}
+.bdr02{border-radius: 50px 0;}
+.bdr03{border-radius: 0 25px 50px;}
+.bdr04{border-radius: 0 10px 25px 50px;}
 
-.bdr .circle{}
-.bdr .ellipse{}
+.bdr .circle{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.bdr .ellipse{
+	width: 250px;
+	height: 150px;
+	border-radius: 50%;
+}
 
-.bdr05 {}
-.bdr06 {}
+.bdr05 {border-radius: 50px / 30px;}
+.bdr06 {border-radius: 30% 60% 60% 50% / 80% 40% 70% 30%;}
 
 
 /*box-shadow*/
-.bs01{}
-.bs02{}
-.bs03{}
-.bs04{}
-.bs05{}
-.bs06{}
+.bs01{box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);}
+.bs02{box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+.bs03{box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset;}
+.bs04{box-shadow: 0 0 15px rgba(18, 154, 238, 0.5) inset;}
+.bs05{box-shadow: 0 0 0 6px #9cc883;}
+.bs06{
+	box-shadow: 
+		0 0 0 3px #ffffff inset,
+		0 0 0 3px #fffa9a,
+		0 0 0 6px #9cc883;
+}
 
 /*border-image*/
-.bdi {}
+.bdi {
+	border: 24px solid #fbef82;
+	border-image: url(../img/bdi.png) 24 round;
+}
 
 
 /* 背景画像とグラデーション

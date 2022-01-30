@@ -121,13 +121,13 @@
 
 /* フィルター効果
 ---------------------------*/
-img.filter01 {}
-img.filter02 {}
-img.filter03 {}
-img.filter04 {}
-img.filter05 {}
-img.filter06 {}
-img.filter07 {}
-img.filter08 {}
-img.filter09 {}
+img.filter01 { filter: grayscale(100%);}
+img.filter02 { filter: sepia(100%);}
+img.filter03 { filter: contrast(150%);}
+img.filter04 { filter: brightness(50%);}
+img.filter05 { filter: saturate(50%);}
+img.filter06 { filter: hue-rotate(45deg);}
+img.filter07 { filter: invert(100%);}
+img.filter08 { filter: opacity(50%);}
+img.filter09 { filter: blur(5px);}
 

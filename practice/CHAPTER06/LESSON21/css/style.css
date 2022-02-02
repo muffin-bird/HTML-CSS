@@ -55,6 +55,7 @@
 
 .origin li:hover{  
   transform: scale(2, 1);
+  transform-origin:0 0;
 }
 
 /*transformにtransition効果を適用*/

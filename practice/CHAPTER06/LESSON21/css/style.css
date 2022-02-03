@@ -74,12 +74,14 @@ p.btn01 a{
 p.btn01 a:hover{
   background-color:#fc6;
   color:#000;
+  transition: 1s;
 }
 
 /*フワッと色が変わるボタン2（背景色だけ）*/
 p.btn02 a{
   background-color:#9c9;
   color:#fff;
+  transition:background-color 1s 0s, color 1s 1s;
 }
 
 p.btn02 a:hover{

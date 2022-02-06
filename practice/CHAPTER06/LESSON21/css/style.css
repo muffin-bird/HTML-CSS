@@ -121,11 +121,12 @@ p.btn03 a:hover{
 /* Animation
 ---------------------------*/
 @keyframes fadeIn {
-
+  0% { opacity: 0; },
+  100% { opacity: 1; }
 }
-.fadeIn01 { }
-.fadeIn02 { } /*無限ループ*/
-.fadeIn03 { } /*無限ループ + 反転再生*/
-.fadeIn04 { } /*無限ループ＋反転再生＋3秒後にスタート*/
+.fadeIn01 { animaiton: fadeIn 1s; }
+.fadeIn02 { animaiton: fadeIn 1s infinite; } /*無限ループ*/
+.fadeIn03 { animaiton: fadeIn 1s infinite alternate; } /*無限ループ + 反転再生*/
+.fadeIn04 { animaiton: fadeIn 1s infinite alternate 3s; } /*無限ループ＋反転再生＋3秒後にスタート*/
 
 

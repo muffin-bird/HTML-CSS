@@ -64,6 +64,10 @@ section
   margin: 0 auto;
 }
 
+.section.section-secounday {
+  background-color: #F5F5F5;
+}
+
 .section-headline {
   text-align: center;
   padding: 50px 0;
@@ -71,18 +75,43 @@ section
   font-weight: bold;
 }
 
+/*
+button
+*/
+
+.section-button {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 12.5px 25px;
+}
+
+.button span {
+  padding-right: 5px;
+}
+
+.button-icon {
+  margin-bottom: 3px;
+}
+
+
+/*
+service
+*/
+
 .service-list {
   display: flex;
   text-align: center;
 }
-
-/*
-.service-item {}
-*/
-
-/*
-.service {}
-*/
 
 .service-headline {
   font-size: 20px;
@@ -94,9 +123,31 @@ section
 }
 
 .service-description {
-  padding: 0 20px;
+  padding: 0 20px 100px;
 }
 
 .service-description {
   text-align: left;
+}
+
+/*
+works
+*/
+
+.works-list {
+  display: flex;
+  justify-content: center;
+}
+
+.works-item {
+  padding: 0 25px;
+}
+
+.works-client {
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.works-type {
+  padding-bottom: 50px;
 }

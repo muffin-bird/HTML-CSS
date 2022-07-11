@@ -90,9 +90,7 @@ ol {
 /* Lists (definition) */
 /* ============================================ */
 
-dt {
-  font-weight: bold;
-}
+dt {}
 
 dd {
   margin-left: 0;

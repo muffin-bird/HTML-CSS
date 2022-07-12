@@ -81,7 +81,7 @@ button
 
 .section-button {
   text-align: center;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .button {
@@ -92,7 +92,7 @@ button
   font-weight: bold;
   background-color: #333;
   border-radius: 10px;
-  padding: 12.5px 25px;
+  padding: 10px 20px;
 }
 
 .button span {
@@ -103,7 +103,6 @@ button
   margin-bottom: 3px;
 }
 
-
 /*
 service
 */
@@ -111,6 +110,7 @@ service
 .service-list {
   display: flex;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .service-headline {
@@ -123,7 +123,7 @@ service
 }
 
 .service-description {
-  padding: 0 20px 100px;
+  padding: 0 20px;
 }
 
 .service-description {
@@ -134,20 +134,25 @@ service
 works
 */
 
+.works-card {
+  padding: 0 30px;
+}
+
 .works-list {
   display: flex;
   justify-content: center;
 }
 
-.works-item {
-  padding: 0 25px;
+.works-link {
+  display: block;
+  transition: background-color .25s;
+}
+
+.works-link:hover {
+  background-color: #e4e4e4;
 }
 
 .works-client {
   padding: 5px 0;
   font-weight: bold;
-}
-
-.works-type {
-  padding-bottom: 50px;
 }

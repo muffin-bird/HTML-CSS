@@ -85,8 +85,8 @@
     <ul class="blog-list">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
       <li class="blog-item">
-        <a href="<?php the_permalink() ;?>" class="blog-link">
-          <time class="blog-data" datatime="2022-07-01"><?php echo get_the_date('Y.m.d'); ?></time>
+        <a href="<?php the_permalink(); ?>" class="blog-link">
+          <time class="blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
           <div class="blog-info">
             <h2 class="blog-title"><?php the_title(); ?></h2>
             <p class="blog-ttl"><?php the_content(); ?></p>
@@ -95,5 +95,11 @@
       </li>
       <?php endwhile; endif; ?><!-- ループ終わり -->
     </ul>
-  </section>
+    <div class="section-button blog-button">
+      <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button">
+        <span>More</span>
+        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon.svg" width="20" height="20">
+      </a>
+    </div>
+  </section> 
 <?php get_footer(); ?>

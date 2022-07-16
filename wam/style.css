@@ -2,6 +2,7 @@
 
 /*
 Base style
+Theme Name: wam_template
 */
 
 body {
@@ -40,13 +41,13 @@ header
   display: block;
 }
 
-.header-img {
+.top-img {
   position: relative;
   width: 100%;
   text-align: right;
 }
 
-.header-discription {
+.top-discription {
   position: absolute;
   top: 33%;
   left: 13.5%;
@@ -186,7 +187,11 @@ blog
   padding-right: 50px;
 }
 
-.blog-ttl {
+.blog-title {
+  font-weight: bold;
+}
+
+.blog-info {
   width: 500px;
   text-align: left;
 }

@@ -426,11 +426,11 @@ caption {
 
 td,
 th {
-  vertical-align: top;
+  vertical-align: text-top;
   padding: 0;
+  font-weight: 400;
 }
 
 th {
   text-align: left;
-  font-weight: bold;
 }

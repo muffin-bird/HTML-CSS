@@ -73,7 +73,7 @@ section
 .section-headline {
   text-align: center;
   padding: 50px 0;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -118,7 +118,7 @@ service
 }
 
 .service-headline {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -227,4 +227,58 @@ footer
 
 .footer-nav-list ul li a {
   display: block;
+}
+
+/*
+page
+*/
+
+.page-headline {
+  padding: 80px 0 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*
+contact
+*/
+
+.contact-txt {
+  padding: 0 0 50px;
+  line-height: 2;
+}
+
+.label_tag {
+  font-size: .8em;
+  padding: 4px;
+  background: #F45555;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.label_most {
+  background: #666;
+}
+
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea {
+  width: 600px;
+  padding: 8px 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  margin: 10px 0 25px 0;
+  background-color: #fafafa;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+  height: 300px;
+}
+
+input.wpcf7-submit {
+  display: block;
+  padding: 10px 20px;
+  background: #444;
+  color: #fff;
+  font-weight: bold;
 }

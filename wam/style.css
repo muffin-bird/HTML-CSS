@@ -240,7 +240,7 @@ page
 }
 
 /*
-contact
+Contact
 */
 
 .contact-txt {
@@ -281,4 +281,38 @@ input.wpcf7-submit {
   background: #444;
   color: #fff;
   font-weight: bold;
+}
+
+/*
+About
+*/
+
+.page-about {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.about-info {
+  padding-left: 70px;
+}
+
+.about-description {
+  border-bottom: 1px solid #444444;
+  padding-bottom: 50px;
+}
+
+.sns-icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.instagram-icon {
+  padding-left: 20px;
+}
+
+.contact-button {
+  padding-left: 40px;
 }

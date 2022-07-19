@@ -293,12 +293,17 @@ About
   padding-bottom: 50px;
 }
 
+.about-img {
+  width: 250px;
+  height: 250px;
+}
+
 .about-info {
   padding-left: 70px;
 }
 
 .about-description {
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 50px;
 }
 

@@ -7,7 +7,7 @@ Theme Name: wam_template
 
 body {
   font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   color: #333;
 }
@@ -194,6 +194,10 @@ blog
   font-weight: bold;
 }
 
+.blog-ttl {
+  padding-top: 5px;
+}
+
 .blog-info {
   width: 500px;
   text-align: left;
@@ -234,7 +238,7 @@ page
 */
 
 .page-headline {
-  padding: 80px 0 50px;
+  margin: 80px 0 50px;
   font-size: 40px;
   font-weight: bold;
 }
@@ -320,4 +324,39 @@ About
 
 .contact-button {
   padding-left: 40px;
+}
+
+/*
+archive
+*/
+
+.archive-headline {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+}
+
+.archive-blog-item {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
+}
+
+
+.archive-blog-item .archive-blog-link {
+  display: flex;
+}
+
+.archive-blog-info {
+  padding-left: 50px;
+}
+
+.archive-blog-title {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.archive-blog-ttl {
+  width: 600px;
 }

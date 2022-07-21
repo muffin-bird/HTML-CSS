@@ -89,7 +89,7 @@
           <time class="blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
           <div class="blog-info">
             <h2 class="blog-title"><?php the_title(); ?></h2>
-            <p class="blog-ttl"><?php the_content(); ?></p>
+            <p class="blog-ttl"><?php the_excerpt(); ?></p>
           </div>
         </a>
       </li>

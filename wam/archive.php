@@ -7,7 +7,11 @@
       <li class="archive-blog-item">
         <a href="<?php the_permalink(); ?>" class="archive-blog-link">
           <div class="archive-blog-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" width="150" height="150" alt="blog">
+            <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail('thumbnail'); ?>
+            <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" width="150" height="150" alt="blog">
+            <?php endif; ?>
           </div>
           <div class="archive-blog-info">
             <time class="archive-blog-data"><?php echo get_the_date('Y.m.d'); ?></time>

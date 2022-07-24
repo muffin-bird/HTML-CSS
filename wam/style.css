@@ -151,6 +151,11 @@ works
   display: block;
 }
 
+.works-link .works-img {
+  width: 330px;
+  height: 200px;
+}
+
 .works-client {
   padding: 5px 0;
   font-weight: bold;
@@ -348,4 +353,28 @@ archive
 
 .archive-blog-ttl {
   width: 600px;
+}
+
+/*
+archive-works
+*/
+
+.archive-works-img .works-img {
+  width: 570px;
+  height: 370px;
+}
+
+.archive-works-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.archive-works-item {
+  padding-bottom: 60px;
+}
+
+.archive-works-client {
+  font-weight: bold;
+  padding: 5px 0;
 }

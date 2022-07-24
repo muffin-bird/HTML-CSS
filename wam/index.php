@@ -43,37 +43,30 @@
 
   <section class="section section-secounday">
     <h1 class="section-headline">Works</h1>
+    <?php
+    $args = array(
+      'post_type' => 'works', // 投稿タイプスラッグ
+      'posts_per_page' => 3
+    );
+    $the_query = new WP_query($args); 
+    if ($the_query->have_posts()) :
+    ?>
     <ul class="works-list">
+      <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
       <li class="works-item">
         <article class="works-card">
-          <a href="#" class="works-link">
-            <img class="works-img" src="<?php echo get_template_directory_uri(); ?>/img/works-site.jpg" width="330" height="200" alt="works">
-            <p class="works-client">ここにクライアント名が入ります。</p>
-            <p class="works-type">ここに業種が入ります。</p>
+          <a href="<?php the_permalink(); ?>" class="works-link">
+            <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
+            <p class="works-client"><?php echo CFS()->get('client'); ?></p>
+            <p class="works-type"><?php echo CFS()->get('type'); ?></p>
           </a>
         </article>
       </li>
-      <li class="works-item">
-        <article class="works-card">
-          <a href="#" class="works-link">
-            <img class="works-img" src="<?php echo get_template_directory_uri(); ?>/img/works-paper.jpg" width="330" height="200" alt="works">
-            <p class="works-client">ここにクライアント名が入ります。</p>
-            <p class="works-type">ここに業種が入ります。</p>
-          </a>
-        </article>
-      </li>
-      <li class="works-item">
-        <article class="works-card">
-          <a href="#" class="works-link">
-            <img class="works-img" src="<?php echo get_template_directory_uri(); ?>/img/works-video.jpg" width="330" height="200" alt="works">
-            <p class="works-client">ここにクライアント名が入ります。</p>
-            <p class="works-type">ここに業種が入ります。</p>
-          </a>
-        </article>
-      </li>
+      <?php endwhile; ?>
     </ul>
+    <?php endif; wp_reset_postdata(); ?>
     <div class="section-button">
-      <a href="#" class="button">
+      <a href="<?php echo esc_url(home_url('/works/')); ?>" class="button">
         <span>More</span>
         <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon.svg" width="20" height="20">
       </a>

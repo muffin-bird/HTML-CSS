@@ -360,8 +360,8 @@ archive-works
 */
 
 .archive-works-img .works-img {
-  width: 570px;
-  height: 370px;
+  width: 550px;
+  height: 350px;
 }
 
 .archive-works-list {
@@ -370,11 +370,34 @@ archive-works
   flex-wrap: wrap;
 }
 
-.archive-works-item {
-  padding-bottom: 60px;
+.archive-works-list .archive-works-item:nth-child(even) {
+  padding-top: 100px;
 }
 
 .archive-works-client {
   font-weight: bold;
   padding: 5px 0;
+}
+
+/*
+single-works
+*/
+
+.single-works-img {
+  width: 1200px;
+  height: 700px;
+}
+
+.single-works-client {
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.single-works-type {
+  padding-bottom: 10px;
+}
+
+.single-works-description {
+  padding-bottom: 50px;
 }

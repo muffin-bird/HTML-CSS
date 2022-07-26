@@ -1,8 +1,15 @@
 <?php get_header(); ?>
 
 <div class="section">
-<div class="page-headline"><h2>Works</h2></div>
-<img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" width="1200" height="700" alt="works">
+<div class="page-headline">Works</div>
+<figure>
+  <img class="single-works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
+  <figcaption class="single-works-info">
+    <p class="single-works-client"><?php echo CFS()->get('client'); ?></p>
+    <p class="single-works-type"><?php echo CFS()->get('type'); ?></p>
+    <p class="single-works-description"><?php echo CFS()->get('description'); ?></p>
+  </figcaption>
+</figure>
 </div>
 
 <?php get_footer(); ?>

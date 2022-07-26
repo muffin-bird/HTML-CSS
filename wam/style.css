@@ -332,6 +332,10 @@ archive
   padding: 40px 0;
 }
 
+.archive-blog-list {
+  width: 800px;
+}
+
 .archive-blog-list .archive-blog-item:last-child {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -351,9 +355,7 @@ archive
   font-size: 20px;
 }
 
-.archive-blog-ttl {
-  width: 600px;
-}
+.archive-blog-ttl {}
 
 /*
 archive-works
@@ -401,3 +403,21 @@ single-works
 .single-works-description {
   padding-bottom: 50px;
 }
+
+/*
+sidebar
+*/
+
+.archive-sidebar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-area {
+  width: 300px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+.archive-widget {}

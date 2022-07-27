@@ -1,5 +1,16 @@
 <?php
 
+if (function_exists('register_sidebar')) { // ウィジェットの設定
+  register_sidebar(array(
+    'name' => 'サイドウィジェット',
+    'id' => 'sidebar-widget-area',
+    'before_widget' => '<div id="%1$s" class="sideWidget">',
+    'after_widget' => '</div>',
+    'bofore-title' => '<p class="widgetTitle">',
+    'after_title' => '</p>',
+  ));
+}
+
 function post_has_archive($args, $post_type) { // パーマリンクの更新
   if ('post' == $post_type ) {
     $args['rewrite'] = true;

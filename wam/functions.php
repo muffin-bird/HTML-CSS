@@ -1,5 +1,8 @@
 <?php
 
+require_once get_template_directory() . '/lib/widgets.php'; // 自作ウィジェット呼び出し
+
+/*
 if (function_exists('register_sidebar')) { // ウィジェットの設定
   register_sidebar(array(
     'name' => 'サイドウィジェット',
@@ -10,6 +13,7 @@ if (function_exists('register_sidebar')) { // ウィジェットの設定
     'after_title' => '</p>',
   ));
 }
+*/
 
 function post_has_archive($args, $post_type) { // パーマリンクの更新
   if ('post' == $post_type ) {

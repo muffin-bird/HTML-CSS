@@ -57,6 +57,56 @@ class ImgNewPostWidget extends WP_Widget {
 
     return $instance;
   }
+
+  // ウィジェットの内容をWebページに出力
+
+  public function widget($args, $instance){
+    // ウィジェットのオプション[title]を取得
+    $title = empty($instance['title']) ? '':$instance['title'];
+
+    // ウィジェットのオプション['limit']を取得
+    $limit = (!empty($instance['limit'])) ? absint($instance['limit']) : 5;
+    if(!$limit) {
+      $limit = 5;
+    }
+
+    // ウィジェットの開始タグ
+    echo $args['before_widget'];
+    if(!empty($title)) {
+      echo $args['before_title']. $title. $args['after_title'];
+    }
+
+    // queryオブジェクト
+    $query_args = array(
+      'post_per_page' => $limit,
+      'post_type' => 'post',
+      'ignore_sticky_posts' => 1,
+    );
+    $my_query = new WP_Query($query_args);
+
+    // 出力するHTML
+    if($my_query->have_posts()):
+    ?>
+    <div class="recent-posts">
+      <?php while($my_query->have_posts()): $my_query->the_post(); ?>
+      <article>
+        <a class="flex-container" href="<?php the_permalink(); ?>">
+          <figure>
+            <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail('large'); ?>
+            <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" >
+            <?php endif; ?>
+          </figure>
+          <h2><?php the_title(); ?></h2>
+        </a>
+      </article>
+      <?php endwhile; ?>
+    </div>
+    <?php endif;
+      wp_reset_postdata();
+      echo $args['after_widget'];
+  }
 }
 
 function theme_register_widget() { // ウィジェットの登録

@@ -4,9 +4,17 @@
     <?php dynamic_sidebar('sidebar-widget-area'); ?>
   </aside>
   <aside class="archive-widget">
+    
     <h2 class="widget-headline">最近の投稿</h2>
     <ul class="archive-card">
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
+      <?php
+        $args = array( // パラメーターを指定
+          'posts_per_page' => 3 // 表示件数
+        );
+        $posts = get_posts($args); // 投稿データの取得
+        foreach($posts as $post): // ループ開始
+        setup_postdata($post); // 記事データの取得
+      ?>
         <li class="archive-card-item">
           <a href="<?php the_permalink(); ?>">
             <div class="archive-card-img">
@@ -22,7 +30,9 @@
             </div>
           </a>
         </li>
-      <?php endwhile; endif; ?><!-- ループ終わり -->
+      <?php 
+      endforeach; // ループ終わり
+      ?>
     </ul>
   </aside>
 </aside>

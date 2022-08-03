@@ -327,13 +327,23 @@ About
 archive
 */
 
+.archive-blog-headline {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .archive-blog-item {
+  width: 800px;
   border-top: 1px solid #e5e5e5;
   padding: 40px 0;
 }
 
 .archive-blog-list {
-  width: 800px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  margin-top: 80px;
+  padding: 20px;
 }
 
 .archive-blog-list .archive-blog-item:last-child {
@@ -418,6 +428,7 @@ sidebar
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   padding: 20px;
+  margin-top: 80px;
 }
 
 .twitter-widget {
@@ -452,4 +463,33 @@ sidebar
 
 .archive-card-info {
   font-size: 14px;
+}
+
+/*
+single
+*/
+
+.single-blog-list {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.single-blog-headline {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.single-blog-img {
+  width: 800px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.single-blog-description {
+  margin-top: 40px;
 }

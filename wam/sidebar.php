@@ -19,9 +19,9 @@
           <a href="<?php the_permalink(); ?>">
             <div class="archive-card-img">
               <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('thumbnail'); ?>
+                <?php the_post_thumbnail('', ['class' => 'card-img']); ?>
               <?php else : ?>
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" alt="blog">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" alt="thumbnail                      ">
               <?php endif; ?>
             </div>
             <div class="archive-card-info">

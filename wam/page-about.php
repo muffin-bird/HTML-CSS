@@ -15,6 +15,9 @@ Template Name: About
         <?php echo CFS()->get('about_description'); ?>
       </div> 
       <div class="sns-icon">
+        <div class="github-icon">
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" width="40" height="40"></a>
+        </div>
         <div class="twitter-icon">
           <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" width="40" height="40"></a>
         </div>

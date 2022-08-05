@@ -41,6 +41,10 @@ header
   display: block;
 }
 
+.nav-list ul li a:hover {
+  border-bottom: 1px solid #333;
+}
+
 .top-img {
   position: relative;
   width: 100%;
@@ -230,6 +234,10 @@ footer
   display: block;
 }
 
+.footer-nav-list ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 /*
 page
 */
@@ -313,6 +321,10 @@ About
   justify-content: end;
   align-items: center;
   padding-top: 50px;
+}
+
+.twitter-icon {
+  padding-left: 20px;
 }
 
 .instagram-icon {

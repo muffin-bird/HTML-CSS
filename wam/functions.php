@@ -80,4 +80,3 @@ function my_excerpt_length() { // 抜粋
 add_filter('excerpt_length','my_excerpt_length',999);
 
 add_theme_support('post-thumbnails'); //  アイキャッチ設定
-

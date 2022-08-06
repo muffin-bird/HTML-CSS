@@ -25,6 +25,11 @@
     </ul>
   <?php get_sidebar(); ?>
   </div>
+    <?php
+      if (function_exists("pagination")) {
+        pagination($wp_query->max_num_pages);
+      }
+    ?>
 </div>
 
 <?php get_footer(); ?>

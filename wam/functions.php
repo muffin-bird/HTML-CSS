@@ -74,17 +74,16 @@ function cpt_register_dep() { // カテゴリー
 add_action('init', 'cpt_register_dep');
 
 function pagination($pages = '', $range = 2) { // ページネーション
-  $showitems = ($range * 2) + 1;
-  // 現在のページ数
-  global $paged;
-  if(empty($paged)) {
+  $showitems = ($range * 2) + 1; // 表示するページ数(5ページを表示)
+
+  global $paged; // 現在のページ値
+  if(empty($paged)) { // デフォルトのページ
     $paged = 1;
   }
 
-  // 全ページ数
-  if($pages == '') {
-    global $wp_query;
-    $pages = $wp_query->max_num_pages;
+  if($pages == '') { 
+    global $wp_query; // 全ページ値
+    $pages = $wp_query->max_num_pages; // 全ページ値を取得
     if(!$pages) {
       $pages = 1;
     }
@@ -94,6 +93,7 @@ function pagination($pages = '', $range = 2) { // ページネーション
   if(1 != $pages) {
     echo '<div class="pagination">';
     echo '<ul>';
+
     // 1ページ目でなければ、「前のページ」リンクを表示
     if($paged > 1) {
       echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">前のページ</a></li>';
@@ -103,9 +103,9 @@ function pagination($pages = '', $range = 2) { // ページネーション
     for ($i=1; $i <= $pages; $i++) {
       if (1 != $pages &&(!($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
         if ($paged == $i) {
-          echo '<li class="active">' .$i. '</li>';
+          echo '<li class="active">' .$i. '</li>'; // 現在のページ番号表示
         } else {
-          echo '<li><a href="' . esc_url(get_pagenum_link($i)) . '">' .$i. '</a></li>';
+          echo '<li><a href="' . esc_url(get_pagenum_link($i)) . '">' .$i. '</a></li>'; // 他のページ番号表示
         }
       }
     }

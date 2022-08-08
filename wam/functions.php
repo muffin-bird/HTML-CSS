@@ -96,7 +96,7 @@ function pagination($pages = '', $range = 2) { // ページネーション
 
     // 1ページ目でなければ、「前のページ」リンクを表示
     if($paged > 1) {
-      echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">前のページ</a></li>';
+      echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">«</a></li>';
     }
 
     // ページ番号を表示(現在のページはリンクにしない)
@@ -112,7 +112,7 @@ function pagination($pages = '', $range = 2) { // ページネーション
 
     // 最終ページでなければ、「次のページ」リンクを表示
     if ($paged < $pages) {
-      echo '<li class="next"><a href="' . esc_url(get_pagenum_link($paged + 1)) . '">次のページ</a></li>';
+      echo '<li class="next"><a href="' . esc_url(get_pagenum_link($paged + 1)) . '">»</a></li>';
     }
     echo '</ul>';
     echo '</div>';

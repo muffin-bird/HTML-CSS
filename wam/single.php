@@ -18,6 +18,18 @@
           <?php the_content(); ?>
         </figcaption>
       </figure>
+      <div class="page-nation">
+        <?php if (get_previous_post()) : ?>
+          <div class="page-left">
+            <?php previous_post_link('&laquo; %link', 'PREV'); ?>
+          </div>  
+        <?php endif; ?>
+        <?php if (get_next_post()) : ?>
+          <div class="page-right">
+            <?php next_post_link('%link &raquo;', 'NEXT'); ?>
+          </div>
+        <?php endif; ?>
+      </div>
     </div>
   <?php endwhile; endif; ?>
   <?php get_sidebar(); ?>

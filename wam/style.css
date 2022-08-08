@@ -523,3 +523,20 @@ pagination
   border-bottom: 1px solid #333;
   font-weight: bold;
 }
+
+/*
+post_link
+*/
+
+.page-nation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-left a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.page-right a:hover {
+  border-bottom: 1px solid #333;
+}

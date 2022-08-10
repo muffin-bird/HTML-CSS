@@ -23,7 +23,7 @@
       </li>
       <?php endwhile; endif; ?><!-- ループ終わり -->
       <?php if (function_exists("pagination")): ?>
-        <?php pagination($wp_query->max_num_pages); ?>
+        <?php pagination(); ?>
       <?php endif; ?>
     </ul>
   <?php get_sidebar(); ?>

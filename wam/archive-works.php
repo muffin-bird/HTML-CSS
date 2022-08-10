@@ -5,7 +5,8 @@
     <?php
     $args = array(
       'post_type' => 'works',
-      'posts_per_page' => 6
+      'posts_per_page' => 4,
+      'paged' => $paged
     );
     $the_query = new WP_Query($args);
     if($the_query->have_posts()):
@@ -26,6 +27,9 @@
       <?php endwhile; ?>
     <?php endif; wp_reset_postdata(); ?><!-- ループ終わり -->
     </ul>
+    <?php if (function_exists("pagination")): ?>
+      <?php pagination($the_query->max_num_pages); ?>
+    <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>

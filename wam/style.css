@@ -519,7 +519,7 @@ pagination
   margin: 0 10px;
 }
 
-.pagination li.active {
+.pagination .active {
   border-bottom: 1px solid #333;
   font-weight: bold;
 }

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
  <section class="section">
     <figure class="top-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/header-img.jpg" width="60%" height="auto" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-img.jpg" width="60%" height="auto" alt="">
       <figcaption class="top-discription">
         ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。
       </figcaption>
@@ -14,7 +14,7 @@
       <li class="service-item">
         <dl class="service">
           <dt class="service-headline">Photograph</dt>
-          <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/img/photograph-img.svg" width="100" height="100" alt="service"></dd>
+          <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/photograph-img.svg" width="100" height="100" alt="service"></dd>
           <dd class="service-description">
             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
           </dd>
@@ -23,7 +23,7 @@
       <li class="service-item">
         <dl class="service">
           <dt class="service-headline">Design</dt>
-          <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/img/design-img.svg" width="100" height="100" alt="service"></dd>
+          <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/design-img.svg" width="100" height="100" alt="service"></dd>
           <dd class="service-description">
             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
           </dd>
@@ -32,7 +32,7 @@
       <li class="service-item">
         <dl class="service">
           <dt class="service-headline">Coding</dt>
-          <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/img/coding-img.svg" width="100" height="100" alt="service"></dd>
+          <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/coding-img.svg" width="100" height="100" alt="service"></dd>
           <dd class="service-description">
             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
           </dd>
@@ -68,7 +68,7 @@
     <div class="section-button">
       <a href="<?php echo esc_url(home_url('/works/')); ?>" class="button">
         <span>More</span>
-        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon.svg" width="20" height="20">
+        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" width="20" height="20">
       </a>
     </div>
   </section>
@@ -91,7 +91,7 @@
     <div class="section-button blog-button">
       <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button">
         <span>More</span>
-        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon.svg" width="20" height="20">
+        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" width="20" height="20">
       </a>
     </div>
   </section> 

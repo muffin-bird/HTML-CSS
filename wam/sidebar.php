@@ -21,7 +21,7 @@
               <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail('', ['class' => 'card-img']); ?>
               <?php else : ?>
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" alt="thumbnail                      ">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog.jpg" alt="thumbnail">
               <?php endif; ?>
             </div>
             <div class="archive-card-info">

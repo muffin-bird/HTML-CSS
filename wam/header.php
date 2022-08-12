@@ -6,18 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <title><?php echo bloginfo('name'); ?></title>
-  <link rel="preconnect" href="<?php echo get_template_directory_uri(); ?>/https://fonts.googleapis.com">
-  <link rel="preconnect" href="<?php echo get_template_directory_uri(); ?>/https://fonts.gstatic.com" crossorigin>
-  <link href="<?php echo get_template_directory_uri(); ?>/https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-  <?php wp_head(); ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/destyle.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <?php
+  wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  wp_enqueue_script('jquery');
+  wp_enqueue_script('wam-main', get_template_directory_uri() . '/assets/js/main.js');
+  wp_head();
+  ?>
 </head>
 
 <body> 
   <header class="header">
     <div class="nav-logo">
-      <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" width="50" height="50" alt="ロゴ"></a>
+      <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="50" height="50" alt="ロゴ"></a>
       <nav class="nav-list">
         <ul>
           <li><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>

@@ -11,7 +11,7 @@
             <?php if (has_post_thumbnail()) : ?>
               <?php the_post_thumbnail('thumbnail'); ?>
             <?php else : ?>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/blog.jpg" width="150" height="150" alt="blog">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog.jpg" width="150" height="150" alt="blog">
             <?php endif; ?>
           </div>
           <div class="archive-blog-info">

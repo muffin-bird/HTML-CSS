@@ -9,8 +9,8 @@
   <link rel="preconnect" href="<?php echo get_template_directory_uri(); ?>/https://fonts.googleapis.com">
   <link rel="preconnect" href="<?php echo get_template_directory_uri(); ?>/https://fonts.gstatic.com" crossorigin>
   <link href="<?php echo get_template_directory_uri(); ?>/https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/destyle.css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <?php wp_head(); ?>
 </head>
 

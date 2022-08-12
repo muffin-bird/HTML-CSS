@@ -2,7 +2,6 @@
 
 require_once get_template_directory() . '/lib/widgets.php'; // 自作ウィジェット呼び出し
 
-
 if (function_exists('register_sidebar')) { // ウィジェットの設定
   register_sidebar(array(
     'name' => 'サイドウィジェット',
@@ -124,4 +123,12 @@ function my_excerpt_length() { // 抜粋
 }
 add_filter('excerpt_length','my_excerpt_length',999);
 
-add_theme_support('post-thumbnails'); //  アイキャッチ設定
+add_theme_support('title-tag'); // <title>タグの出力
+
+function my_document_title_separator($separator) { // タイトルタグの区切り文字を変更
+  $separator = '|';
+  return $separator;
+}
+add_filter('document_title_separator', 'my_document_title_separator');
+
+add_theme_support('post-thumbnails'); // アイキャッチ設定

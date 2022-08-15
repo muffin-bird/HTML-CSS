@@ -539,3 +539,17 @@ post_link
 .page-right a:hover {
   border-bottom: 1px solid #333;
 }
+
+/*
+404-page
+*/
+
+.container {
+  line-height: 3;
+  padding-bottom: 50px;
+}
+
+.container a {
+  text-decoration: underline;
+  color: #0000EE;
+}

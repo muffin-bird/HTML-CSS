@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <section class="section">
-  <h2 class="page-headline">404 NOT FOUND</h2>
+  <div class="page-headline">
+    <h2>404 NOT FOUND</h2>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+  </div>
   <div class="container">
     <p>お探しのページが見つかりませんでした。</p>
     <p>申し訳ございませんが、<a href="<?php echo esc_url(home_url('/')); ?>">こちらのリンク</a>からトップページにお戻りください。</p>

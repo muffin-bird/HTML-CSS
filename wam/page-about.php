@@ -7,7 +7,10 @@ Template Name: About
 ?>
 
 <section class="section">
-  <div class="page-headline"><?php the_title(); ?></div>
+  <div class="page-headline">
+    <h2><?php the_title(); ?></h2>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+  </div>
   <div class="page-about">
     <img class="about-img" src="<?php echo CFS()->get('about_img'); ?>">
     <div class="about-info">

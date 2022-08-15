@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
 <div class="section">
-  <div class="page-headline">Works</div>
+  <div class="page-headline">
+    <h2>Works</h2>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+  </div>
     <?php
     $args = array(
       'post_type' => 'works',

@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
 <div class="section">
-  <div class="page-headline">Works</div>
+  <div class="page-headline">
+    <h2>Works</h2>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+  </div>
   <figure>
     <img class="single-works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
     <figcaption class="single-works-info">

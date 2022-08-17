@@ -118,6 +118,19 @@ function pagination($pages = '', $range = 2) { // ページネーション
   }
 }
 
+function my_pre_get_posts($query) { // トップページで表示する件数を変更
+  // 管理画面、メインクエリ以外は設定しない
+  if (is_admin() || ! $query->is_main_query()) {
+    return;
+  }
+  // トップページの場合
+  if ($query->is_home()) {
+    $query->set('posts_per_page', 3);
+    return;
+  }
+}
+add_action('pre_get_posts', 'my_pre_get_posts');
+
 function my_excerpt_length() { // 抜粋
   return 60;
 }

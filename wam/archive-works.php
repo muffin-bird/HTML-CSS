@@ -9,7 +9,7 @@
     $args = array(
       'post_type' => 'works',
       'posts_per_page' => 4,
-      'paged' => $paged
+      'paged' => $paged,
     );
     $the_query = new WP_Query($args);
     if($the_query->have_posts()):

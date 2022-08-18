@@ -128,6 +128,11 @@ function my_pre_get_posts($query) { // トップページで表示する件数�
     $query->set('posts_per_page', 3);
     return;
   }
+  // カスタム投稿一覧の場合
+  if ( $query->is_post_type_archive('works') ) {
+    $query->set('posts_per_page', 4);
+    return;
+  }
 }
 add_action('pre_get_posts', 'my_pre_get_posts');
 

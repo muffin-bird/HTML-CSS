@@ -131,6 +131,19 @@ function my_pre_get_posts($query) { // トップページで表示する件数�
 }
 add_action('pre_get_posts', 'my_pre_get_posts');
 
+function my_static_breadcrumb_adder($breadcrumb_trail) {
+  if (is_post_type_archive('post')) { // デフォルトの投稿一覧ページの場合
+    $item = new bcn_breadcrumb('Blog', null, array('post'));
+  } elseif (get_post_type() === 'post') { // デフォルトの投稿ページの場合
+    $item = new bcn_breadcrumb('Blog', null, array('post'), home_url('blog/'), null, true);
+  }
+
+  $stuck = array_pop($breadcrumb_trail->breadcrumbs); // HOME 一時退避
+  $breadcrumb_trail->breadcrumbs[] = $item; // Blog追加
+  $breadcrumb_trail->breadcrumbs[] = $stuck; // HOME戻す
+}
+add_action('bcn_after_fill', 'my_static_breadcrumb_adder');
+
 function my_excerpt_length() { // 抜粋
   return 60;
 }

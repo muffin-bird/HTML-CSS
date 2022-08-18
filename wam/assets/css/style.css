@@ -401,8 +401,6 @@ archive
   font-size: 20px;
 }
 
-.archive-blog-ttl {}
-
 /*
 archive-works
 */
@@ -513,9 +511,13 @@ single
 }
 
 .single-blog-headline {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   padding-bottom: 20px;
+}
+
+.archive-blog-data {
+  font-size: 16px;
 }
 
 .single-blog-img {
@@ -594,4 +596,5 @@ breadcrumb
 
 .breadcrumb {
   font-size: 12px;
+  font-weight: normal;
 }

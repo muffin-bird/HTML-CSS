@@ -3,7 +3,10 @@
 <div class="section">
   <div class="archive-sidebar">
     <ul class="archive-blog-list">
-      <div class="archive-blog-headline"><h2>Blog</h2></div>
+      <div class="archive-blog-headline">
+        <h2>Blog</h2>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
+      </div>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
       <li class="archive-blog-item">
         <a href="<?php the_permalink(); ?>" class="archive-blog-link">

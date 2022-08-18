@@ -4,9 +4,10 @@
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div class="archive-sidebar">
     <div class="single-blog-list">
-      <div class="single-headline">
-        <time class="archive-blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
-        <h2 class="single-blog-headline"><?php the_title(); ?></h2>
+      <time class="archive-blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
+      <div class="single-blog-headline">
+        <h2><?php the_title(); ?></h2>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
       </div>
       <figure class="single-blog-img">
         <?php if (has_post_thumbnail()) : ?>

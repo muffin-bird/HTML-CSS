@@ -17,7 +17,7 @@ function post_has_archive($args, $post_type) { // パーマリンクの更新
   if ('post' == $post_type ) {
     $args['rewrite'] = true;
     $args['has_archive'] = 'blog';
-    $args['label'] = 'ブログ';
+    $args['label'] = 'Blog';
   }
   return $args;
 }

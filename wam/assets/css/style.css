@@ -24,7 +24,7 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 .nav-list ul {
@@ -33,11 +33,28 @@ header
 
 .nav-list ul li {
   text-align: right;
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
-.nav-list ul li a:hover {
-  border-bottom: 1px solid #333;
+.nav-list ul li a {
+  position: relative;
+}
+
+.nav-list ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transition: all .3s;
+  transform: scale(0,1);
+  transform-origin: center top;
+}
+
+.nav-list ul li a:hover::after {
+  transform: scale(1,1);
 }
 
 .top-img {

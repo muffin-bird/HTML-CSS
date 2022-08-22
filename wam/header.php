@@ -21,10 +21,10 @@
       <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="50" height="50" alt="ロゴ"></a>
       <nav class="nav-list">
         <ul>
-          <li><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
-          <li><a href="<?php echo esc_url(home_url('/works/')); ?>">Works</a></li>
-          <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog</a></li>
-          <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
+          <li <?php if(is_page('about')) echo 'class="current"'; ?>><a href="<?php echo esc_url(home_url('/about/')); ?>">About</a></li>
+          <li <?php if(is_post_type_archive('works') || is_singular('works')) echo 'class="current"'; ?>><a href="<?php echo esc_url(home_url('/works/')); ?>">Works</a></li>
+          <li <?php if(!is_post_type_archive('works') && is_archive() || is_single() && !is_singular('works')) echo 'class="current"'; ?>><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog</a></li>
+          <li <?php if(is_page('contact')) echo 'class="current"'; ?>><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
         </ul>
       </nav>
     </div>

@@ -603,9 +603,13 @@ breadcrumb
 animation
 */
 
+.archive-works-link {
+  opacity: 0;
+}
+
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -620,8 +624,4 @@ animation
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.archive-works-item {
-  opacity: 0;
 }

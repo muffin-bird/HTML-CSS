@@ -110,19 +110,38 @@ button
 .button {
   position: relative;
   display: inline-block;
-  color: #fff;
-  font-size: 20px;
+  color: #333;
+  font-size: 18px;
   font-weight: bold;
-  background-color: #444;
-  padding: 10px 20px;
 }
 
+.button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -35px;
+  width: 25px;
+  height: 5px;
+  border-right: 2px solid #333;
+  border-bottom: 1px solid #333;
+  transform: skew(60deg);
+  transition: all .3s ease;
+}
+
+.button:hover::after {
+  width: 35px;
+  right: -45px;
+}
+
+/*
 .circle-icon::after {
   font-family: "Font Awesome 6 Free";
   content: '\f35a';
   color: #fff;
   padding-left: 5px;
 }
+*/
 
 
 
@@ -396,6 +415,7 @@ About
 
 .contact-button {
   padding-left: 40px;
+  margin-right: 50px;
 }
 
 /*

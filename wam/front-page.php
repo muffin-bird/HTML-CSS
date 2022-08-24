@@ -67,7 +67,7 @@
     <?php endif; wp_reset_postdata(); ?>
     <div class="section-button">
       <a href="<?php echo esc_url(home_url('/works/')); ?>" class="button">
-        <span class="circle-icon">More</span>
+        <span>View More</span>
       </a>
     </div>
   </section>
@@ -89,7 +89,7 @@
     </ul>
     <div class="section-button blog-button">
       <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button">
-        <span class="circle-icon">More</span>
+        <span>View More</span>
       </a>
     </div>
   </section> 

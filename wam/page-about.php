@@ -29,7 +29,7 @@ Template Name: About
         </div>
         <div class="contact-button">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="button">
-            <span class="circle-icon">Contact</span>
+            <span>Contact</span>
           </a>
         </div>
       </div>

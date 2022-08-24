@@ -67,8 +67,7 @@
     <?php endif; wp_reset_postdata(); ?>
     <div class="section-button">
       <a href="<?php echo esc_url(home_url('/works/')); ?>" class="button">
-        <span>More</span>
-        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" width="20" height="20">
+        <span class="circle-icon">More</span>
       </a>
     </div>
   </section>
@@ -90,8 +89,7 @@
     </ul>
     <div class="section-button blog-button">
       <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button">
-        <span>More</span>
-        <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" width="20" height="20">
+        <span class="circle-icon">More</span>
       </a>
     </div>
   </section> 

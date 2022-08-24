@@ -5,7 +5,7 @@ Base style
 */
 
  body {
-  font-family: 'Manrope', 'Noto Sans JP', "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
+  font-family: 'Manrope', 'Noto Sans JP', "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif", "Font Awesome";
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -43,10 +43,10 @@ header
 .nav-list ul li a::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -10px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background: #333;
   transition: all .3s;
   transform: scale(0, 1);
@@ -117,13 +117,14 @@ button
   padding: 10px 20px;
 }
 
-.button span {
-  padding-right: 5px;
+.circle-icon::after {
+  font-family: "Font Awesome 6 Free";
+  content: '\f35a';
+  color: #fff;
+  padding-left: 5px;
 }
 
-.button-icon {
-  margin-bottom: 3px;
-}
+
 
 /*
 service
@@ -251,10 +252,10 @@ footer
 .footer-nav-list ul li a::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -10px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background: #fff;
   transition: all .3s;
   transform: scale(0, 1);
@@ -632,7 +633,7 @@ breadcrumb
 */
 
 .breadcrumb {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
 }
 

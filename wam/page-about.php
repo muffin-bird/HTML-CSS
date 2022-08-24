@@ -29,8 +29,7 @@ Template Name: About
         </div>
         <div class="contact-button">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="button">
-            <span>Contact</span>
-            <img class="button-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon.svg" width="20" height="20">
+            <span class="circle-icon">Contact</span>
           </a>
         </div>
       </div>

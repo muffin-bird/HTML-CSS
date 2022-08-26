@@ -39,5 +39,5 @@ jQuery(function($){
 		// 画面が読み込み
 		$(window).on('load', function() {
 			delayScrollAnime();
-		});
+		});	
 });

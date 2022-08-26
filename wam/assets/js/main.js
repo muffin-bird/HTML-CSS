@@ -1,25 +1,25 @@
-jQuery(function($){
+jQuery(function ($) {
 
-	function delayScrollAnime(){
+	function delayScrollAnime() {
 		var time = 0.3; // 遅延時間の値
 		var value = time;
-		$('.archive-works-item').each(function(){
+		$('.archive-works-item').each(function () {
 			var parent = this; // 親要素を取得
 			var elemPos = $(this).offset().top; // 要素の位置を取得
 			var scroll = $(window).scrollTop(); // スクロール量を取得
 			var windowHeight = $(window).height(); // 画面の高さを取得
 			var childs = $(this).children(); // 子要素を取得
 
-			if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")){ // 指定領域内,親要素にクラス(!play)
-				$(childs).each(function() {
-					if(!$(this).hasClass("fadeUp")) { // アニメーションのクラスが指定されているかチェック
+			if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) { // 指定領域内,親要素にクラス(!play)
+				$(childs).each(function () {
+					if (!$(this).hasClass("fadeUp")) { // アニメーションのクラスが指定されているかチェック
 						$(parent).addClass("play"); // 親要素にクラス(play)を追加
 						$(this).css("animation-delay", value + "s"); // CSS追加
 						$(this).addClass("fadeUp"); // アニメーションクラスの追加
 						value = value + time; // delay時間の増加
 
 						var index = $(childs).index(this); // 要素のindex番号の取得
-						if((childs.length-1) == index) {
+						if ((childs.length - 1) == index) {
 							$(parent).removeClass("play"); // クラス(play)を外す
 						}
 					}
@@ -30,14 +30,38 @@ jQuery(function($){
 			}
 		})
 	}
-	
-		// 画面スクロール
-		$(window).scroll(function (){
-			delayScrollAnime();
-		});
 
-		// 画面が読み込み
-		$(window).on('load', function() {
-			delayScrollAnime();
-		});	
+	// 画面スクロール
+	$(window).scroll(function () {
+		delayScrollAnime();
+	});
+
+	// 画面が読み込み
+	$(window).on('load', function () {
+		delayScrollAnime();
+	});
+
+	$(function () {
+		var h = $(window).height();
+
+		$('#contents').css('display', 'none');
+		$('#loader-bg ,#loader').height(h).css('display', 'block');
+	});
+
+	$(window).load(function () { //全ての読み込みが完了したら実行
+		$('#loader-bg').delay(900).fadeOut(800);
+		$('#loader').delay(600).fadeOut(300);
+		$('#contents').css('display', 'block');
+	});
+
+	//10秒たったら強制的にロード画面を非表示
+	$(function () {
+		setTimeout('stopload()', 10000);
+	});
+
+	function stopload() {
+		$('#contents').css('display', 'block');
+		$('#loader-bg').delay(900).fadeOut(800);
+		$('#loader').delay(600).fadeOut(300);
+	}
 });

@@ -16,7 +16,13 @@
   ?>
 </head>
 
-<body> 
+<body>
+  <div id="container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p>LOADING</p>
+  </div> 
   <header class="header">
     <div class="nav-logo">
       <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="50" height="50" alt="ロゴ"></a>

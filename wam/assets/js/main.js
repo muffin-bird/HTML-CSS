@@ -42,26 +42,26 @@ jQuery(function ($) {
 	});
 
 	$(function () {
-		var h = $(window).height();
-
-		$('#contents').css('display', 'none');
-		$('#loader-bg ,#loader').height(h).css('display', 'block');
+		var flg = null;
+		var webStorage = function () {
+			if (sessionStorage.getItem('access')) { // データの取得
+				// 2回目以降アクセス時の処理
+				flg = 1;
+			} else {
+				// 初回アクセス時の処理
+				sessionStorage.setItem('access', 'true'); // データ保存
+				flg = 0;
+				var h = $(window).height();
+				$('#contents').css('display', 'none');
+				$('#loader-bg, #loader').height(h).css('display', 'block');
+				$(window).load(function () {
+					$('#loader-bg').delay(1800).fadeOut(500);
+					$('#loader').delay(1500).fadeOut(300);
+					$('#contents').css('display', 'block');
+				});
+			}
+			return flg;
+		}
+		webStorage();
 	});
-
-	$(window).load(function () { //全ての読み込みが完了したら実行
-		$('#loader-bg').delay(900).fadeOut(800);
-		$('#loader').delay(600).fadeOut(300);
-		$('#contents').css('display', 'block');
-	});
-
-	//10秒たったら強制的にロード画面を非表示
-	$(function () {
-		setTimeout('stopload()', 10000);
-	});
-
-	function stopload() {
-		$('#contents').css('display', 'block');
-		$('#loader-bg').delay(900).fadeOut(800);
-		$('#loader').delay(600).fadeOut(300);
-	}
 });

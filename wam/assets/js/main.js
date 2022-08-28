@@ -24,9 +24,6 @@ jQuery(function ($) {
 						}
 					}
 				})
-			} else {
-				$(childs).removeClass("fadeUp"); // アニメーションクラスの削除
-				value = time; // delayの初期値
 			}
 		})
 	}

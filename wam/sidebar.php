@@ -4,7 +4,6 @@
     <?php dynamic_sidebar('sidebar-widget-area'); ?>
   </aside>
   <aside class="archive-widget">
-    
     <h2 class="widget-headline">最近の投稿</h2>
     <ul class="archive-card">
       <?php
@@ -26,7 +25,7 @@
             </div>
             <div class="archive-card-info">
               <time class="archive-card-data"><?php echo get_the_date('Y.m.d'); ?></time>
-              <h2 class="archive-card-title"><?php the_title(); ?></h2>
+              <p class="archive-card-title"><?php the_title(); ?></p>
             </div>
           </a>
         </li>

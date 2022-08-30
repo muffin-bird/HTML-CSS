@@ -190,15 +190,6 @@ button
 }
 
 /*
-.circle-icon::after {
-  font-family: "Font Awesome 6 Free";
-  content: '\f35a';
-  color: #fff;
-  padding-left: 5px;
-}
-*/
-
-/*
 service
 */
 
@@ -474,41 +465,31 @@ About
 archive
 */
 
-.archive-blog-headline {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.archive-blog-item {
-  width: 800px;
-  border-top: 1px solid #e5e5e5;
-  padding: 40px 0;
-}
-
 .archive-blog-list {
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-  margin-top: 80px;
-  padding: 20px;
-}
-
-.archive-blog-list .archive-blog-item:nth-last-child(2) {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.archive-blog-item .archive-blog-link {
+  width: 850px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.archive-blog-list .archive-blog-item:nth-child(odd) {
+  margin: 0 50px 40px 0;
+}
+
+.archive-blog-list .archive-blog-item:nth-child(even) {
+  margin-bottom: 40px;
+}
+
+.archive-blog-link {
+  display: block;
+  width: 400px;
 }
 
 .archive-blog-info {
-  padding-left: 50px;
+  padding: 10px 0;
 }
 
 .archive-blog-title {
-  padding: 10px 0;
   font-weight: bold;
-  font-size: 20px;
 }
 
 /*
@@ -565,14 +546,11 @@ sidebar
 .archive-sidebar {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .sidebar-area {
   width: 300px;
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-  padding: 20px;
-  margin-top: 80px;
 }
 
 .twitter-widget h2 {
@@ -582,7 +560,7 @@ sidebar
 .twitter-widget h2::before {
   content: '';
   display: block;
-  width: 90px;
+  width: 110px;
   height: 2px;
   background: #e5e5e5;
   position: absolute;
@@ -593,7 +571,7 @@ sidebar
 .twitter-widget h2::after {
   content: '';
   display: block;
-  width: 90px;
+  width: 110px;
   height: 2px;
   background: #e5e5e5;
   position: absolute;
@@ -609,7 +587,7 @@ sidebar
 .archive-widget h2::before {
   content: '';
   display: block;
-  width: 80px;
+  width: 100px;
   height: 2px;
   background: #e5e5e5;
   position: absolute;
@@ -620,7 +598,7 @@ sidebar
 .archive-widget h2::after {
   content: '';
   display: block;
-  width: 80px;
+  width: 100px;
   height: 2px;
   background: #e5e5e5;
   position: absolute;
@@ -673,7 +651,7 @@ single
 }
 
 .archive-blog-data {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .single-blog-img {
@@ -692,9 +670,8 @@ single
 pagination
 */
 
-.pagination {
-  width: 800px;
-  margin-top: 40px;
+.pagination-works {
+  margin-top: 50px;
 }
 
 .pagination ul {

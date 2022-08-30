@@ -31,7 +31,9 @@
     <?php endif; wp_reset_postdata(); ?><!-- ループ終わり -->
     </ul>
     <?php if (function_exists("pagination")): ?>
-      <?php pagination($the_query->max_num_pages); ?>
+      <div class="pagination-works">
+        <?php pagination($the_query->max_num_pages); ?>
+      </div>
     <?php endif; ?>
 </div>
 

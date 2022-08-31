@@ -638,32 +638,27 @@ single
 */
 
 .single-blog-list {
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-  margin-top: 80px;
-  padding: 20px;
+  width: 850px;
 }
 
 .single-blog-headline {
   font-size: 30px;
   font-weight: bold;
-  padding-bottom: 20px;
+}
+
+.meta {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 20px 0 10px 0;
 }
 
 .archive-blog-data {
-  font-size: 12px;
-}
-
-.single-blog-img {
-  width: 800px;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 40px 0;
-  margin-bottom: 40px;
+  font-size: 14px;
+  color: #888888;
 }
 
 .single-blog-description {
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 /*

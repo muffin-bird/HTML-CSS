@@ -3,6 +3,7 @@
 ・PHP 7.4.1  
 ・WordPress 6.0.1  
 ・jQuery 3.6.0  
+・FontAwesome 6.1.2
 ## Plugin
 ・Breadcrumb NavXT 7.1.0  
 ・Classic Editor 1.6.2  

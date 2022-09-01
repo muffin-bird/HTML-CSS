@@ -335,8 +335,12 @@ page
 
 .page-headline {
   margin: 80px 0 50px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+}
+
+.page-headline h2 {
+  margin-bottom: 5px;
 }
 
 /*
@@ -650,6 +654,22 @@ single
   background-color: #f7f7f7;
   padding: 10px;
   margin: 20px 0 10px 0;
+}
+
+.single-date::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f304';
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.single-update::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f2f9';
+  font-weight: bold;
+  color: #888888;
+  padding-right: 5px;
+  margin-left: 10px;
 }
 
 .archive-blog-data {

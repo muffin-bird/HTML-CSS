@@ -12,7 +12,12 @@
         <h2><?php the_title(); ?></h2>
       </div>
       <div class="meta">
-        <time class="archive-blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
+        <time class="archive-blog-data">
+          <span class="single-date"><?php echo get_the_date('Y.m.d'); ?><span>
+          <?php if (get_the_date('Y.m.d') != get_the_modified_date('Y.m.d')) : ?>
+            <span class="single-update"><?php the_modified_date('Y.m.d'); ?></span>
+          <?php endif; ?>
+        </time>
       </div>
       <figure class="single-blog-img">
         <?php if (has_post_thumbnail()) : ?>

@@ -14,10 +14,13 @@
       <div class="meta">
         <time class="archive-blog-data">
           <span class="single-date"><?php echo get_the_date('Y.m.d'); ?><span>
+        </time>
+        <time class="archive-blog-data">
           <?php if (get_the_date('Y.m.d') != get_the_modified_date('Y.m.d')) : ?>
             <span class="single-update"><?php the_modified_date('Y.m.d'); ?></span>
           <?php endif; ?>
         </time>
+        <span class="single-category"><?php the_category(); ?></span>
       </div>
       <figure class="single-blog-img">
         <?php if (has_post_thumbnail()) : ?>

@@ -651,9 +651,15 @@ single
 }
 
 .meta {
+  display: flex;
+  align-items: center;
   background-color: #f7f7f7;
   padding: 10px;
   margin: 20px 0 10px 0;
+}
+
+.single-date {
+  margin-right: 16px;
 }
 
 .single-date::before {
@@ -663,13 +669,29 @@ single
   padding-right: 5px;
 }
 
+.single-update {
+  margin-right: 16px;
+}
+
 .single-update::before {
   font-family: "Font Awesome 6 Free";
   content: '\f2f9';
   font-weight: bold;
   color: #888888;
   padding-right: 5px;
-  margin-left: 10px;
+}
+
+.single-category a::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f07b';
+  font-weight: bold;
+  color: #888888;
+  padding-right: 5px;
+}
+
+.single-category {
+  font-size: 14px;
+  color: #888888;
 }
 
 .archive-blog-data {

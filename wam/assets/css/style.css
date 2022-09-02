@@ -711,6 +711,10 @@ pagination
   margin-top: 50px;
 }
 
+.pagination {
+  width: 100%;
+}
+
 .pagination ul {
   display: flex;
   flex-wrap: wrap;

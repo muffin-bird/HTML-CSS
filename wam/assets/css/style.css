@@ -80,7 +80,7 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .nav-list ul {
@@ -551,6 +551,7 @@ sidebar
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .sidebar-area {
@@ -702,6 +703,10 @@ single
 .single-blog-description {
   margin: 40px 0;
 }
+
+/*
+category
+*/
 
 /*
 pagination

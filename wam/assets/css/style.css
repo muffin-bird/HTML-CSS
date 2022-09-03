@@ -262,6 +262,11 @@ blog
 
 .blog-link {
   display: flex;
+  transition: .15s all linear;
+}
+
+.blog-link:hover {
+  opacity: 0.7;
 }
 
 .blog-data {
@@ -450,6 +455,15 @@ About
   justify-content: end;
   align-items: center;
   padding-top: 50px;
+  transition: 15s all linear;
+}
+
+.sns-icon img {
+  transition: .15s all linear;
+}
+
+.sns-icon img:hover {
+  opacity: 0.7;
 }
 
 .twitter-icon {
@@ -632,10 +646,32 @@ sidebar
 
 .archive-card-info {
   padding: 15px;
+  font-size: 14px;
 }
 
-.archive-card-info {
-  font-size: 14px;
+.archive-card-data {
+  color: #888;
+}
+
+.archive-list li {
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+}
+
+.archive-list li a {
+  transition: .15s all linear;
+}
+
+.archive-list li a:hover {
+  opacity: 0.7;
+}
+
+.posts_count {
+  float: right;
+  border: 1px solid #a5a5a5;
+  background-color: #a5a5a5;
+  color: #fff;
+  padding: 0 8px;
 }
 
 /*
@@ -797,6 +833,10 @@ breadcrumb
 .breadcrumb {
   font-size: 13px;
   font-weight: normal;
+}
+
+.breadcrumb a:hover {
+  opacity: 0.7;
 }
 
 /*

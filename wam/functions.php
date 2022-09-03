@@ -163,3 +163,9 @@ function my_document_title_separator($separator) { // タイトルタグの区�
 add_filter('document_title_separator', 'my_document_title_separator');
 
 add_theme_support('post-thumbnails'); // アイキャッチ設定
+
+function posts_count($posts_count) { // カテゴリーの投稿数(正規表現)
+  $posts_count = preg_replace('/<\/a>.*\((\d+)\)/', '<span class="posts_count">$1</span></a>', $posts_count);
+  return $posts_count;
+}
+add_filter('wp_list_categories', 'posts_count');

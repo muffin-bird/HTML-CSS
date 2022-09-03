@@ -34,4 +34,16 @@
       ?>
     </ul>
   </aside>
+  <aside class="archive-widget">
+    <h2 class="widget-headline">カテゴリー</h2>
+    <ul class="archive-list">
+      <?php
+      $args = array(
+        'title_li' => '',
+        'show_count' => 1,
+      );
+      wp_list_categories($args);
+      ?>
+    </ul>
+  </aside>
 </aside>

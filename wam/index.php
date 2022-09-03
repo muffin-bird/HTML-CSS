@@ -18,7 +18,17 @@
             <?php endif; ?>
           </div>
           <div class="archive-blog-info">
+            <div class="head-info">
             <time class="archive-blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
+            <span class="category-date">
+              <?php
+                $cat = get_the_category();
+                $cat = $cat = $cat[0]; {
+                  echo $cat->cat_name;
+                }
+              ?>
+            </span>
+            </div>
             <h2 class="archive-blog-title"><?php the_title(); ?></h2>
           </div>
         </a>

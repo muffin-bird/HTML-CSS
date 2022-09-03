@@ -7,7 +7,17 @@
   </div>
   <div class="archive-sidebar">
     <div class="category-archive">
-      <h2 class="category-headline"></h2>
+      <h2 class="category-headline">
+        <?php
+          // カテゴリーデータの取得
+          $cat = get_the_category();
+          $cat = $cat[0]; {
+            // カテゴリー名の表示(リンクなし)
+            echo $cat->cat_name;
+          }
+        ?>
+        <span>の記事一覧</span>
+      </h2>
       <ul class="archive-blog-list">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
         <li class="archive-blog-item">
@@ -20,7 +30,17 @@
               <?php endif; ?>
             </div>
             <div class="archive-blog-info">
+              <div class="head-info">
               <time class="archive-blog-data"><?php echo get_the_date('Y.m.d'); ?></time>
+              <span class="category-date">
+              <?php
+                $cat = get_the_category();
+                $cat = $cat = $cat[0]; {
+                  echo $cat->cat_name;
+                }
+              ?>
+              </span>
+              </div>
               <h2 class="archive-blog-title"><?php the_title(); ?></h2>
             </div>
           </a>

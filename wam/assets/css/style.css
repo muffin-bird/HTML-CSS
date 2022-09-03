@@ -698,6 +698,7 @@ single
 .archive-blog-data {
   font-size: 14px;
   color: #888888;
+  padding-right: 5px;
 }
 
 .single-blog-description {
@@ -707,6 +708,26 @@ single
 /*
 category
 */
+
+.category-headline {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #a5a5a5;
+  color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.category-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.category-date::before {
+  content: '|';
+  font-size: 14px;
+  padding-right: 5px;
+}
 
 /*
 pagination

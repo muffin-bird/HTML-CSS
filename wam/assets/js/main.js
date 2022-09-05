@@ -62,10 +62,10 @@ jQuery(function ($) {
 		webStorage();
 	});
 
-	$('.page-top').click(function() { // pagetop
+	$('.page-top').click(function () { // pagetop
 		$('body,html').animate({
-			scrollTop:0 // トップまでスクロール
-		}, 1000,"easeInOutQuint");
+			scrollTop: 0 // トップまでスクロール
+		}, 1200, "easeInOutQuint");
 		return false;
 	});
 });

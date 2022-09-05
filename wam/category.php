@@ -24,9 +24,9 @@
           <a href="<?php the_permalink(); ?>" class="archive-blog-link">
             <div class="archive-blog-img">
               <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail(array(400, 225)); ?>
+                <span class="mask"><?php the_post_thumbnail(array(400, 225)); ?></span>
               <?php else : ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog.jpg" width="400" height="225" alt="blog">
+                <span class="mask"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog.jpg" width="400" height="225" alt="blog"></span>
               <?php endif; ?>
             </div>
             <div class="archive-blog-info">

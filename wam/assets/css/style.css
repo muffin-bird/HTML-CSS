@@ -145,7 +145,7 @@ section
 .section-headline {
   text-align: center;
   padding: 50px 0;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
 }
 
@@ -519,6 +519,22 @@ archive
   font-weight: bold;
 }
 
+.archive-blog-img .mask {
+  display: block;
+  transform: scale(1);
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+.archive-blog-link:hover .archive-blog-img .mask {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.archive-blog-img {
+  overflow: hidden;
+}
+
 /*
 archive-works
 */
@@ -646,6 +662,22 @@ sidebar
 
 .archive-card-item:last-child {
   margin-bottom: 0;
+}
+
+.archive-card-img .mask {
+  display: block;
+  transform: scale(1);
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+.archive-card-item:hover .archive-card-img .mask {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.archive-card-img {
+  overflow: hidden;
 }
 
 .card-img {

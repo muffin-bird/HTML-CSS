@@ -11,6 +11,7 @@
   wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
   wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
   wp_enqueue_script('jquery');
+  wp_enqueue_script('jquery Easing Plugin', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js');
   wp_enqueue_script('wam-main', get_template_directory_uri() . '/assets/js/main.js');
   wp_head();
   ?>

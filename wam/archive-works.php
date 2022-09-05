@@ -35,6 +35,9 @@
         <?php pagination($the_query->max_num_pages); ?>
       </div>
     <?php endif; ?>
+    <p class="page-top">
+      <a href="#top"><i class="fa-sharp fa-solid fa-2x fa-angles-up"></i></a>
+    </p>
 </div>
 
 <?php get_footer(); ?>

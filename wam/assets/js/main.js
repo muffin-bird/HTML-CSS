@@ -38,7 +38,7 @@ jQuery(function ($) {
 		delayScrollAnime();
 	});
 
-	$(function () {
+	$(function () { // loading
 		var flg = null;
 		var webStorage = function () {
 			if (sessionStorage.getItem('access')) { // データの取得
@@ -60,5 +60,12 @@ jQuery(function ($) {
 			return flg;
 		}
 		webStorage();
+	});
+
+	$('.page-top').click(function() { // pagetop
+		$('body,html').animate({
+			scrollTop:0 // トップまでスクロール
+		}, 1000,"easeInOutQuint");
+		return false;
 	});
 });

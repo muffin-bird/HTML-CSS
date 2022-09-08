@@ -1,7 +1,7 @@
 # MySite
 ## Version
-・PHP 7.4.1  
 ・WordPress 6.0.1  
+・PHP 7.4.1  
 ・jQuery 3.6.0  
 ・jQuery Easing 1.4.1  
 ・FontAwesome 6.1.2

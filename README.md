@@ -4,6 +4,7 @@
 ・PHP 7.4.1  
 ・jQuery 3.6.0  
 ・jQuery Easing 1.4.1  
+・Slick 1.8.1  
 ・FontAwesome 6.1.2
 ## Plugin
 ・Breadcrumb NavXT 7.1.0  

@@ -68,4 +68,5 @@ jQuery(function ($) {
 		}, 1200, "easeInOutQuint");
 		return false;
 	});
+	
 });

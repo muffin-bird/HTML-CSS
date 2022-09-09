@@ -223,28 +223,26 @@ service
 works
 */
 
-
-.works-card {
-  padding: 0 30px;
+.works-card .works-link .works-img {
+  width: 350px;
+  height: 230px;
 }
 
-.works-list {
-  display: flex;
-  justify-content: center;
+.works-img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slick-slide {
+  margin: 0 25px;
 }
 
 .works-link {
-  display: block;
+  transition: .15s all linear;
 }
 
-.works-link .works-img {
-  width: 330px;
-  height: 200px;
-}
-
-.works-client {
-  padding: 5px 0;
-  font-weight: bold;
+.works-link:hover {
+  opacity: 0.8;
 }
 
 /*

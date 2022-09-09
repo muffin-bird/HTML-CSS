@@ -46,19 +46,17 @@
     <?php
     $args = array(
       'post_type' => 'works', // 投稿タイプスラッグ
-      'posts_per_page' => 3
+      'posts_per_page' => 6
     );
     $the_query = new WP_query($args); 
     if ($the_query->have_posts()) :
     ?>
-    <ul class="works-list">
+    <ul class="slider">
       <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
       <li class="works-item">
         <article class="works-card">
           <a href="<?php the_permalink(); ?>" class="works-link">
             <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
-            <p class="works-client"><?php echo CFS()->get('client'); ?></p>
-            <p class="works-type"><?php echo CFS()->get('type'); ?></p>
           </a>
         </article>
       </li>

@@ -68,5 +68,32 @@ jQuery(function ($) {
 		}, 1200, "easeInOutQuint");
 		return false;
 	});
-	
+
+	$('.slider').slick({ // オプション
+		arrows: false, // 矢印なし
+		autoplay: true, // 自動プレイ
+		autoplaySpeed: 0, // 自動プレイ待ち時間
+		speed: 7000, // スライド時間
+		infinite: true, // ループ設定
+		cssEase: 'linear', // easeなし
+		pauseOnHover: false, // マウスで一時停止なし
+		pauseOnFocua: false, // フォーカス一時停止なし
+		slidesToShow: 3, // スライド画面3枚
+		slidesToScroll: 1, // 動かす要素数
+		responsive: [ // レスポンシブ時にテスト予定
+			{
+			breakpoint: 769,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 426,
+			settings: {
+				slidesToShow: 1.5,
+			}
+		}
+	]
+	});
+
 });

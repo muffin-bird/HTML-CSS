@@ -223,12 +223,7 @@ service
 works
 */
 
-.works-card .works-link .works-img {
-  width: 350px;
-  height: 230px;
-}
-
-.works-img {
+.slider.works-img {
   width: 100%;
   height: auto;
 }

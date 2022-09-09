@@ -46,7 +46,7 @@
     <?php
     $args = array(
       'post_type' => 'works', // 投稿タイプスラッグ
-      'posts_per_page' => 6
+      'posts_per_page' => 4
     );
     $the_query = new WP_query($args); 
     if ($the_query->have_posts()) :
@@ -56,7 +56,7 @@
       <li class="works-item">
         <article class="works-card">
           <a href="<?php the_permalink(); ?>" class="works-link">
-            <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
+            <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" width="350px" height="230px" alt="works">
           </a>
         </article>
       </li>

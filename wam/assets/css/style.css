@@ -72,7 +72,7 @@ header
 */
 
 .header {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -113,19 +113,11 @@ header
   transform: scale(1, 1);
 }
 
-.top-img {
-  position: relative;
-  width: 100%;
-  text-align: right;
-}
-
-.top-discription {
-  position: absolute;
-  top: 33%;
-  left: 13.5%;
-  font-size: 20px;
-  line-height: 3;
-  text-align: left;
+@media only screen and (min-width: 961px) {
+  .header {
+    width: 92%;
+    margin: 0 auto;
+  }
 }
 
 /*
@@ -133,7 +125,7 @@ section
 */
 
 .section {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -147,6 +139,13 @@ section
   padding: 50px 0;
   font-size: 45px;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 961px) {
+  .section {
+    width: 92%;
+    margin: 0 auto;
+  }
 }
 
 /*
@@ -197,9 +196,27 @@ button
 service
 */
 
+.top-img {
+  position: relative;
+  text-align: right;
+}
+
+.top-discription {
+  position: absolute;
+  top: 32%;
+  left: 13.5%;
+  font-size: 20px;
+  line-height: 3;
+  text-align: left;
+}
+
 .service-list {
   display: flex;
   text-align: center;
+}
+
+.service-item {
+  margin-right: 50px;
 }
 
 .service-headline {
@@ -212,10 +229,6 @@ service
 }
 
 .service-description {
-  padding: 0 20px;
-}
-
-.service-description {
   text-align: left;
 }
 
@@ -223,10 +236,27 @@ service
 works
 */
 
-.slider.works-img {
+.slider img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3/2;
 }
+
+/*
+.works-card {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%;
+}
+
+.slider img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+}
+*/
 
 .slider .slick-slide {
   margin: 0 25px;
@@ -305,7 +335,7 @@ footer
 }
 
 .footer-nav-list {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -339,6 +369,13 @@ footer
 .footer-nav-list ul li a:hover::after,
 .footer-nav-list ul li.current-footer a::after {
   transform: scale(1, 1);
+}
+
+@media only screen and (min-width: 961px) {
+  .footer-nav-list {
+    width: 92%;
+    margin: 0 auto;
+  }
 }
 
 /*

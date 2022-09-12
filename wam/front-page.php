@@ -29,7 +29,7 @@
           </dd>
         </dl>
       </li>
-      <li class="service-item">
+      <li class="service-item-last">
         <dl class="service">
           <dt class="service-headline">Coding</dt>
           <dd class="service-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/coding-img.svg" width="100" height="100" alt="service"></dd>
@@ -56,7 +56,7 @@
       <li class="works-item">
         <article class="works-card">
           <a href="<?php the_permalink(); ?>" class="works-link">
-            <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" width="350px" height="230px" alt="works">
+            <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
           </a>
         </article>
       </li>

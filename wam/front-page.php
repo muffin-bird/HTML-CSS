@@ -1,7 +1,7 @@
 <?php get_header(); ?>
  <section class="section">
     <figure class="top-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-img.jpg" width="60%" height="auto" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-img.jpg" alt="">
       <figcaption class="top-discription">
         ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。
       </figcaption>

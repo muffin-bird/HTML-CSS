@@ -129,6 +129,11 @@ section
   margin: 0 auto;
 }
 
+.top-img img {
+  width: 60%;
+  aspect-ratio: 3/2;
+}
+
 .section.section-secounday {
   background-color: #F5F5F5;
   margin: 100px auto 50px;

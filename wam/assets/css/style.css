@@ -481,29 +481,29 @@ About
 
 .page-about {
   display: flex;
-  align-items: center;
+  align-items: top;
   padding-bottom: 50px;
 }
 
 .about-img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .about-info {
-  padding-left: 70px;
+  margin-left: 50px;
 }
 
 .about-description {
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .sns-icon {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 30px;
   transition: 15s all linear;
 }
 

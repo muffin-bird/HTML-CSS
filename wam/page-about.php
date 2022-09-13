@@ -19,13 +19,13 @@ Template Name: About
       </div> 
       <div class="sns-icon">
         <div class="github-icon">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/github.svg" width="40" height="40"></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/github.svg" width="35" height="35"></a>
         </div>
         <div class="twitter-icon">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" width="40" height="40"></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" width="35" height="35"></a>
         </div>
         <div class="instagram-icon">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" width="40" height="40"></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" width="35" height="35"></a>
         </div>
         <div class="contact-button">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="button">

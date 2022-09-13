@@ -19,7 +19,7 @@
       <li class="archive-works-item">
         <a href="<?php the_permalink(); ?>" class="archive-works-link">
         <div class="archive-works-img">
-          <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" alt="works">
+          <img class="works-img" src="<?php echo CFS()->get('thumbnail'); ?>" width="550px" height="350px" alt="works">
         </div>
         <div class="archive-works-info">
           <p class="archive-works-client"><?php echo CFS()->get('client'); ?></p>

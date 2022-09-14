@@ -91,7 +91,6 @@
       </a>
     </div>
     <p class="page-top">
-      <a href="#top"><i class="fa-sharp fa-solid fa-2x fa-angles-up"></i></a>
     </p>
   </section> 
 <?php get_footer(); ?>

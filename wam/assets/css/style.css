@@ -320,16 +320,6 @@ blog
 }
 
 /*
-page_top
-*/
-
-.page-top {
-  margin: 50px 0 25px;
-  color: #a5a5a5;
-  text-align: right;
-}
-
-/*
 footer
 */
 
@@ -337,6 +327,7 @@ footer
   color: #fff;
   background-color: #333;
   padding: 50px 0;
+  margin-top: 50px;
 }
 
 .footer-nav-list {

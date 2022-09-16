@@ -38,7 +38,7 @@
         <?php pagination(); ?>
       <?php endif; ?>
     </ul>
-  <!--<?php get_sidebar(); ?>-->
+  <?php get_sidebar(); ?>
   </div>
   <p class="page-top">
   </p>

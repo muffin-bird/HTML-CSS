@@ -120,6 +120,13 @@ header
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .header {
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
 /*
 section
 */
@@ -147,6 +154,13 @@ section
 }
 
 @media only screen and (min-width: 961px) {
+  .section {
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
   .section {
     width: 92%;
     margin: 0 auto;

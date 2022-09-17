@@ -18,9 +18,9 @@
         ?>
         <span>の記事一覧</span>
       </h2>
-      <ul class="archive-blog-list">
+      <ul class="category-blog-list">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
-        <li class="archive-blog-item">
+        <li class="category-blog-item">
           <a href="<?php the_permalink(); ?>" class="archive-blog-link">
             <div class="archive-blog-img">
               <?php if (has_post_thumbnail()) : ?>

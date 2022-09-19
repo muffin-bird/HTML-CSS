@@ -98,12 +98,15 @@ jQuery(function ($) {
 		});
 	});
 
-	$(".burger").click(function () { // ナビゲーション
+	/*
+	ナビゲーション
+	*/
+	$(".burger").click(function () {
 		$(this).toggleClass('active'); // activeクラスを付与
 		$(".nav-list").toggleClass('panelactive'); // panelactiveクラス付与
 	});
-	
-	$(".nav-list a").click(function () {　
+
+	$(".nav-list a").click(function () {
 		$(".burger").removeClass('active'); // activeクラス除去
 		$(".nav-list").removeClass('panelactive'); // panelactiveクラス除去
 	});

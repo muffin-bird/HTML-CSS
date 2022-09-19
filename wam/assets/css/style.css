@@ -242,7 +242,7 @@ section
 }
 
 .top-img img {
-  width: 60%;
+  width: 100%;
   aspect-ratio: 3/2;
 }
 
@@ -279,7 +279,7 @@ section
 
   .section-headline {
     padding: 35px 0;
-    font-size: 35px;
+    font-size: 38px;
   }
 }
 
@@ -343,6 +343,7 @@ service
 }
 
 .top-discription {
+  display: none;
   position: absolute;
   top: 32%;
   left: 13.5%;
@@ -361,6 +362,7 @@ service
 }
 
 .service-headline {
+  color: #888888;
   font-size: 25px;
   font-weight: bold;
 }
@@ -455,6 +457,10 @@ blog
 }
 
 @media only screen and (max-width: 760px) {
+  .blog-list {
+    width: 80%;
+  }
+
   .blog-link {
     display: block;
     text-align: left;

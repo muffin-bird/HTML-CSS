@@ -272,6 +272,17 @@ section
   }
 }
 
+@media only screen and (max-width: 760px) {
+  .section.section-secounday {
+    margin: 50px auto 15;
+  }
+
+  .section-headline {
+    padding: 35px 0;
+    font-size: 35px;
+  }
+}
+
 /*
 button
 */
@@ -314,6 +325,12 @@ button
 .button:hover::after {
   width: 35px;
   right: -30px;
+}
+
+@media only screen and (max-width: 760px) {
+  .blog-button {
+    padding: 35px 0;
+  }
 }
 
 /*
@@ -520,14 +537,11 @@ footer
 
   .footer-nav-list {
     display: block;
+    text-align: center;
   }
 
   .footer-nav-list ul {
     display: none;
-  }
-
-  .footer-copy {
-    text-align: center;
   }
 }
 

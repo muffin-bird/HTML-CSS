@@ -35,6 +35,7 @@
     <header class="header">
       <div class="nav-logo">
         <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="50" height="50" alt="ロゴ"></a>
+        <div class="burger"><span></span><span></span><span></span></div>
         <nav class="nav-list">
           <ul>
             <li <?php if(is_page('about')) echo 'class="current"'; ?>><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT</a></li>

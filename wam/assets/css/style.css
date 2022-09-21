@@ -656,7 +656,6 @@ About
 .page-about {
   display: flex;
   align-items: top;
-  padding-bottom: 50px;
 }
 
 .about-img {
@@ -669,7 +668,7 @@ About
 }
 
 .about-description {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #333333;
   padding-bottom: 30px;
 }
 
@@ -700,6 +699,24 @@ About
 .contact-button {
   padding-left: 40px;
   margin-right: 35px;
+}
+
+@media only screen and (max-width: 760px) {
+  .page-about {
+    display: block;
+    text-align: center;
+  }
+
+  .about-info {
+    margin-left: 0;
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  .sns-icon {
+    justify-content: center;
+  }
+
 }
 
 /*

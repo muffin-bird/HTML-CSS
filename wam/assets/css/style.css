@@ -1016,68 +1016,37 @@ sidebar
 
 .widget-headline {
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.twitter-widget h2 {
-  position: relative;
-}
-
-.twitter-widget h2::before {
+.widget-headline::before {
   content: '';
-  display: block;
-  width: 35%;
   height: 2px;
   background: #e5e5e5;
-  position: absolute;
-  top: 50%;
-  left: 0;
+  margin-right: 10px;
+  flex-grow: 1;
 }
 
-.twitter-widget h2::after {
+.widget-headline::after {
   content: '';
-  display: block;
-  width: 35%;
   height: 2px;
   background: #e5e5e5;
-  position: absolute;
-  top: 50%;
-  right: 0;
+  margin-left: 10px;
+  flex-grow: 1;
 }
 
 .archive-widget h2 {
-  position: relative;
-  margin-top: 20px;
-}
-
-.archive-widget h2::before {
-  content: '';
-  display: block;
-  width: 30%;
-  height: 2px;
-  background: #e5e5e5;
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
-.archive-widget h2::after {
-  content: '';
-  display: block;
-  width: 30%;
-  height: 2px;
-  background: #e5e5e5;
-  position: absolute;
-  top: 50%;
-  right: 0;
+  margin-top: 10%;
 }
 
 .widget-headline {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .archive-card-item {
-  margin-bottom: 25px;
+  margin-bottom: 5%;
   border: 1px solid #e5e5e5;
 }
 

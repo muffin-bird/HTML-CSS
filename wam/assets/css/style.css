@@ -585,8 +585,8 @@ Contact
 }
 
 .label_tag {
-  font-size: .8em;
-  padding: 0 2px;
+  font-size: 12px;
+  padding: 1px 2px;
   background: #F45555;
   color: #fff;
   border-radius: 2px;
@@ -599,7 +599,7 @@ Contact
 
 input.wpcf7-form-control.wpcf7-text,
 textarea.wpcf7-form-control.wpcf7-textarea {
-  width: 600px;
+  width: 500px;
   padding: 8px 15px;
   border: 1px solid #eaeaea;
   border-radius: 3px;
@@ -635,7 +635,7 @@ input.wpcf7-submit {
   border-radius: 2px;
   padding: 0.5em 1em;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
@@ -646,7 +646,18 @@ input.wpcf7-submit {
   border-radius: 2px;
   padding: 0.5em 1em;
   margin: 0;
-  text-align: center;
+  text-align: left;
+}
+
+@media only screen and (max-width: 760px) {
+  input.wpcf7-form-control.wpcf7-text,
+  textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 350px;
+  }
+
+  textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 200px;
+  } 
 }
 
 /*
@@ -793,7 +804,7 @@ category
   font-weight: bold;
   background-color: #a5a5a5;
   color: #fff;
-  padding: 15px 20px;
+  padding: 10px 15px;
   margin-bottom: 20px;
 }
 

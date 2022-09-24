@@ -120,6 +120,7 @@ header
     width: 92%;
     margin: 0 auto;
   }
+
   .burger {
     display: none;
   }
@@ -242,7 +243,7 @@ section
 .section {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 130px;
+  padding-top: 150px;
 }
 
 .main {
@@ -305,7 +306,8 @@ button
 }
 
 .blog-button {
-  padding: 50px 0;
+  padding: 0;
+  margin-top: 50px;
 }
 
 .button {
@@ -337,12 +339,6 @@ button
 .button:hover::after {
   width: 35px;
   right: -30px;
-}
-
-@media only screen and (max-width: 760px) {
-  .blog-button {
-    padding: 35px 0;
-  }
 }
 
 /*
@@ -388,7 +384,6 @@ service
 }
 
 @media only screen and (max-width: 760px) {
-
   .top-discription {
     display: none;
   }
@@ -498,15 +493,16 @@ footer
 .footer {
   color: #fff;
   background-color: #333;
-  padding: 50px 0;
   margin-top: 100px;
 }
 
 .footer-nav-list {
   max-width: 1200px;
+  height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-nav-list ul {
@@ -548,14 +544,17 @@ footer
 }
 
 @media only screen and (max-width: 960px) {
+  .footer {
+    margin-top: 50px;
+  }
+
   .footer-nav-list {
     width: 92%;
     margin: 0 auto;
   }
 
   .footer-nav-list {
-    display: block;
-    text-align: center;
+    justify-content: center;
   }
 
   .footer-nav-list ul {
@@ -662,6 +661,7 @@ input.wpcf7-submit {
 }
 
 @media only screen and (max-width: 760px) {
+
   input.wpcf7-form-control.wpcf7-text,
   textarea.wpcf7-form-control.wpcf7-textarea {
     width: 350px;
@@ -669,7 +669,7 @@ input.wpcf7-submit {
 
   textarea.wpcf7-form-control.wpcf7-textarea {
     height: 200px;
-  } 
+  }
 }
 
 /*

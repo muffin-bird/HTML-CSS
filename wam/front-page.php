@@ -8,7 +8,7 @@
     </figure>
  </section>
 
- <section class="section">
+ <section class="section main">
     <h1 class="section-headline">Service</h1>
     <ul class="service-list">
       <li class="service-item">
@@ -41,7 +41,7 @@
     </ul>
  </section>
 
-  <section class="section section-secounday">
+  <section class="section main section-secounday">
     <h1 class="section-headline">Works</h1>
     <?php
     $args = array(
@@ -70,7 +70,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section main">
     <h1 class="section-headline">Blog</h1>
     <ul class="blog-list">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->

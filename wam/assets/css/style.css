@@ -87,6 +87,8 @@ header
 
 .nav-list ul {
   display: flex;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .nav-list ul li {
@@ -507,6 +509,8 @@ footer
 
 .footer-nav-list ul {
   display: flex;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .footer-nav-list ul li {
@@ -1108,8 +1112,13 @@ sidebar
   font-size: 13px;
 }
 
+.archive-list .cat-item-1 {
+  border-top: 1px solid #e5e5e5;
+}
+
 .archive-list li {
   border: 1px solid #e5e5e5;
+  border-top: none;
   padding: 15px;
 }
 

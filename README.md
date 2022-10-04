@@ -13,4 +13,4 @@
 ・Contact Form 7 5.6.2  
 ・Custom Field Suite 2.6.2  
 ・Show Current Template 0.4.6  
-
+・All-in-One WP Migration 7.65  

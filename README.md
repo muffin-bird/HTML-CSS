@@ -8,9 +8,9 @@
 ・FontAwesome 6.1.2
 ## Plugin
 ・Breadcrumb NavXT 7.1.0  
+・Table of Contents Plus 2106  
 ・Classic Editor 1.6.2  
 ・Classic Widgets 0.3  
 ・Contact Form 7 5.6.2  
 ・Custom Field Suite 2.6.2  
 ・Show Current Template 0.4.6  
-・All-in-One WP Migration 7.65  

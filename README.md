@@ -7,6 +7,7 @@
 ・Slick 1.8.1  
 ・FontAwesome 6.1.2
 ## Plugin
+・BackWPup 3.10.0  
 ・Breadcrumb NavXT 7.1.0  
 ・Table of Contents Plus 2106  
 ・Classic Editor 1.6.2  

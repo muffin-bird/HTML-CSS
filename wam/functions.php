@@ -150,17 +150,43 @@ function my_static_breadcrumb_adder($breadcrumb_trail) {
 add_action('bcn_after_fill', 'my_static_breadcrumb_adder');
 
 function my_excerpt_length() { // 抜粋
-  return 60;
+  if (is_front_page()) {
+    return 50;
+  } else {
+    return 100;
+  }
 }
 add_filter('excerpt_length','my_excerpt_length',999);
 
-add_theme_support('title-tag'); // <title>タグの出力
+add_theme_support('title-tag'); // 自動タイトルタグの出力
+
+function get_page_title() { // ページタイトルの取得
+  $page_title = wp_get_document_title();
+  return $page_title;
+}
+
+function remove_title_tagline($title) { // descriptionをtitleタグから削除
+  if (isset($title['tagline'])) {
+    unset($title['tagline']);
+  }
+  return $title;
+}
+add_filter('document_title_parts','remove_title_tagline');
+
+function add_google_fonts() { // Google Font
+    wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap', false);
+}
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 function my_document_title_separator($separator) { // タイトルタグの区切り文字を変更
   $separator = '|';
   return $separator;
 }
 add_filter('document_title_separator', 'my_document_title_separator');
+
+add_post_type_support('page', 'excerpt'); // 固定ページ抜粋を有効化
+
+remove_filter('term_description','wpautop'); // カテゴリーとタグのmeta descriptionからpタグ除去
 
 add_theme_support('post-thumbnails'); // アイキャッチ設定
 
@@ -169,3 +195,15 @@ function posts_count($posts_count) { // カテゴリーの投稿数(正規表現
   return $posts_count;
 }
 add_filter('wp_list_categories', 'posts_count');
+
+function single_style() { // 特定ページにCSS適用
+  if(is_single()) {
+    wp_enqueue_style('single', get_template_directory_uri() . '/assets/css/single.css');
+  }
+}
+add_action('wp_enqueue_scripts', 'single_style');
+
+function my_editor_style() { // クラシックエディタ
+  add_editor_style( '/assets/css/editor-style.css' );
+}
+add_action('admin_init', 'my_editor_style');

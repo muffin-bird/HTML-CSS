@@ -1,0 +1,18 @@
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 45px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  border-left: 10px solid #222222;
+  margin-bottom: 35px;
+}
+
+p {
+  margin-bottom: 30px;
+}

@@ -1,10 +1,10 @@
 <aside class="sidebar-area">
-  <aside class="twitter-widget">
-    <h2 class="widget-headline">Twitter</h2>
+  <aside class="instagram-widget">
+    <h2 class="widget-headline">Instagram</h2>
     <?php dynamic_sidebar('sidebar-widget-area'); ?>
   </aside>
   <aside class="archive-widget">
-    <h2 class="widget-headline">最近の投稿</h2>
+    <h2 class="widget-headline">Latest Posts</h2>
     <ul class="archive-card">
       <?php
         $args = array( // パラメーターを指定
@@ -20,7 +20,7 @@
               <?php if (has_post_thumbnail()) : ?>
                 <span class="mask"><?php the_post_thumbnail('', ['class' => 'card-img']); ?></span>
               <?php else : ?>
-                <span class="mask"><img class="card-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog.jpg" alt="thumbnail"></span>
+                <span class="mask"><img class="card-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Noimg.png" alt="thumbnail"></span>
               <?php endif; ?>
             </div>
             <div class="archive-card-info">
@@ -35,7 +35,7 @@
     </ul>
   </aside>
   <aside class="archive-widget">
-    <h2 class="widget-headline">カテゴリー</h2>
+    <h2 class="widget-headline">Category</h2>
     <ul class="archive-list">
       <?php
       $args = array(

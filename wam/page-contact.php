@@ -8,8 +8,6 @@
   </div>
   <?php the_content(); ?>
   <?php endwhile; endif; ?>
-  <p class="page-top">
-  </p>
 </div>
 
 <?php get_footer(); ?>

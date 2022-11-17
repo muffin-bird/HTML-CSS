@@ -53,8 +53,6 @@
     </div>
   <?php get_sidebar(); ?>
   </div>
-  <p class="page-top">
-  </p>
 </div>
 
 <?php get_footer(); ?>

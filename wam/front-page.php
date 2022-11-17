@@ -1,11 +1,8 @@
 <?php get_header(); ?>
  <section class="section">
-    <figure class="top-img">
+    <div class="top-img">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-img.jpg" alt="">
-      <figcaption class="top-discription">
-        ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。
-      </figcaption>
-    </figure>
+    </div>
  </section>
 
  <section class="section main">
@@ -90,7 +87,5 @@
         <span>View More</span>
       </a>
     </div>
-    <p class="page-top">
-    </p>
   </section> 
 <?php get_footer(); ?>

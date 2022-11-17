@@ -35,8 +35,6 @@ Template Name: About
       </div>
     </div>
   </div>
-  <p class="page-top">
-  </p>
 </section>
 
 <?php get_footer(); ?>

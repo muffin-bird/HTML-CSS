@@ -25,8 +25,6 @@
       </div>
     <?php endif; ?>
   </div>
-  <p class="page-top">
-  </p>
 </div>
 
 <?php get_footer(); ?>
